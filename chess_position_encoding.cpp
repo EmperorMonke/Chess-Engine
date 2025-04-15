@@ -293,21 +293,3 @@ void ChessPositionEncoder::printEncodingPlanes(int start_plane = 0, int end_plan
     std::cout << "Total Move Count: " << total_move_count << std::endl;
     std::cout << "No Progress Move Count: " << no_progress_move_count << std::endl;
 }
-
-int main() {
-    ChessPositionEncoder encoder;
-
-    // Starting position FEN
-    std::string starting_fen = "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 5 6";
-    
-    // Empty previous positions for the starting position
-    std::vector<std::string> previous_positions = {"rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1", "r1bqkbnr/pppppppp/2n5/8/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 2 2", "r1bqkbnr/pppppppp/2n5/8/8/2N2N2/PPPPPPPP/R1BQKB1R b KQkq - 3 2", "r1bqkb1r/pppppppp/2n2n2/8/8/2N2N2/PPPPPPPP/R1BQKB1R w KQkq - 4 3", "r1bqkb1r/pppppppp/2n2n2/8/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq e3 0 3", "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R w KQkq e6 0 4", "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 1 4", "r1bqk2r/ppppbppp/2n2n2/4p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 2 5", "r1bqk2r/ppppbppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq - 3 5", "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2N2N2/PPPP1PPP/R1BQKB1R w KQkq - 4 6"};
-
-    // Encode the position
-    auto encoding = encoder.encode(starting_fen, previous_positions);
-
-    // Print out the encoding planes
-    encoder.printEncodingPlanes(0, 39);
-
-    return 0;
-}
