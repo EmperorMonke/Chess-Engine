@@ -237,7 +237,7 @@ void ChessPositionEncoder::printEncodingPlanes(int start_plane = 0, int end_plan
 
     // Iterate through specified planes
     for (size_t plane_index = start_plane; plane_index < end_plane && plane_index < encoding_planes.size(); ++plane_index) {
-        std::string plane_name;
+        std::string plane_name; 
         std::string plane_description;
         
         // Current position - pieces and repetitions (0-13)

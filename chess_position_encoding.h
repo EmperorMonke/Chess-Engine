@@ -13,6 +13,10 @@ public:
     static constexpr int PIECE_TYPES = 6;
     static constexpr int TOTAL_PLANES = 117;
 
+    // Getter methods for scalar values
+    float getTotalMoveCount() const { return total_move_count; }
+    float getNoProgressMoveCount() const { return no_progress_move_count; }
+
     // Plane indices for different encoding components
     enum PlaneIndices {
         WHITE_PAWN_PLANE = 0,
