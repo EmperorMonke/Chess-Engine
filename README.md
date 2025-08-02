@@ -6,8 +6,8 @@ A chess engine written in [C++], currently in development. This project aims to 
 
 ## 📦 Features (Planned / In Progress)
 
-- [] Move generation
-- [] Perft testing and debugging
+- [ ] Move generation
+- [ ] Perft testing and debugging
 - [ ] Evaluation function
 - [ ] Minimax / Negamax search
 - [x] Alpha-beta pruning
