@@ -4,7 +4,6 @@
 #include <vector>
 #include <string>
 #include <array>
-#include <cstdint>
 
 class ChessPositionEncoder {
 public:
