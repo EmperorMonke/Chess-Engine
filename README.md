@@ -6,12 +6,12 @@ A chess engine written in [C++], currently in development. This project aims to 
 
 ## 📦 Features (Planned / In Progress)
 
-- [ ] Move generation
+- [x] Move generation
 - [ ] Perft testing and debugging
 - [ ] Evaluation function
 - [ ] Minimax / Negamax search
 - [x] Alpha-beta pruning
-- [ ] UCI protocol support
+- [x] UCI protocol support
 - [ ] Transposition table (Zobrist hashing)
 - [ ] Opening book
 - [ ] Endgame heuristics / Tablebase support
